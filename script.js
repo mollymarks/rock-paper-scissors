@@ -36,7 +36,8 @@ function singleRound(playerSelection, computerSelection){
 function game(){
     for (let i = 0; i < 5; i++){
         let roundCompChoice = computerPlay();
-        let round = singleRound(playerSelection, roundCompChoice);
+        let roundPlayerChoice = prompt('Choose rock, paper or scissors');
+        let round = singleRound(roundPlayerChoice, roundCompChoice);
         console.log(round);
         if (round == 'You Win!!'){
             playerScore += 1;
@@ -68,8 +69,6 @@ function game(){
 
 let playerScore = 0;
 let compScore = 0;
-const playerSelection = 'rock';
-const computerSelection = computerPlay();
 console.log(game());
 
 

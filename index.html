@@ -8,43 +8,6 @@
 </head>
 <body>
     <div ID ='User-Choice'>test</div>
-    <script>
-        
-        function getRandomItem(items) {
-            return items[Math.floor(Math.random()*3)];
-        }
-        let choices = ['Rock', 'Paper', 'Scissors']
-        let compChoice = getRandomItem(choices);
-
-        console.log('Computer: ' + compChoice);
-
-
-        let userChoice = window.prompt('Rock, Paper, or Scissors?');
-
-        console.log('User: ' + userChoice);
-
-        if (userChoice === compChoice){
-            console.log('Draw')
-        }
-        else if (userChoice === 'Paper' && compChoice === 'Rock'){
-            console.log('You win!')
-        }
-        else if (userChoice === 'Paper' && compChoice === 'Scissors'){
-            console.log('You lose :(')
-        }
-        else if (userChoice === 'Rock' && compChoice === 'Paper'){
-            console.log('You lose :(')
-        }
-        else if (userChoice ===  'Rock' && compChoice === 'Scissors'){
-            console.log('You win!')
-        }
-        else if (userChoice ===  'Scissors' && compChoice === 'Rock'){
-            console.log('You lose :(')
-        }
-        else if (userChoice ===  'Scissors' && compChoice === 'Paper'){
-            console.log('You win!')
-        }
-
-    </script>
+    <script src='script.js'></script>
 </body>
 </html>

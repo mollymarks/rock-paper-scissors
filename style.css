@@ -46,6 +46,11 @@ header {
     border-bottom: 6px solid black;
 }
 
+#user-label,
+#comp-label {
+    padding-top: 8px;
+}
+
 #user-score,
 #comp-score {
     font-size: 100px;
@@ -68,8 +73,29 @@ button {
     width: 100px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .choices p {
     text-align: center;
     padding: 20px;
     font-size: 12px;
+}
+
+footer {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#restart {
+    height: 30px;
+    width: 70px;
+    font-size: 10px;
+}
+
+.restart {
+    display: flex;
+    justify-content: center;
 }
